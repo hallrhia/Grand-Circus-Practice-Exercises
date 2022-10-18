@@ -1,0 +1,52 @@
+/* Goofy borders around everything to help us see the layout. */
+* {
+  border: 2px solid cornflowerblue;
+  margin: 5px;
+  padding: 3px;
+}
+
+/* body takes up full viewport and extends all the way to the edges. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-parent-container {
+  padding: 40px;
+  background-color: aqua;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.main-body-container {
+  background-color: pink;
+  padding: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul {
+  justify-content: flex-end;
+}
+.footer-parent-container {
+  background-color: palegreen;
+  padding: 30px;
+  display: flex
+}
+
+.pages-list {
+  list-style-type: none;
+}
+
+.pages-list li {
+  display: inline;
+}
